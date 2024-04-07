@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <title>Título</title>
-  </head>
+<html>
+<head>
+<style>
+
+html, body {
+  /* si no, lo del flex no va */
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+.flex-container {
+  /* ocupa toda la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+.flex-container>form {
+  border: 1px solid blue;
+  /* en unidades de fuente del elemento raíz */
+  padding: 0rem 1rem;
+}
+
+
+</style>
+</head>
 <body>
-  <p>¡Hola mundo!</p>
-  <p><a href="formulario.html">Formulario CSS</a></p>
+
+<div class="flex-container">
+  <form action="index2.php" method="post">
+  	<p>LOGOTIPO</p>
+    <br><label for="username">Nombre:</label>
+    <br><input type="text" name="username"></input>
+    <br><label for="cont">Contraseña:</label>
+    <br><input type="password" name="cont"></input>
+    <p><button type="submit">Login</button></p>
+  </form>
+</div>
+
 </body>
 </html>
