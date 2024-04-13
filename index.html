@@ -1,46 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
+  <head>
+    <title>Prueba CSS</title>
+    <link rel="stylesheet" href="css/admin.css">
+  </head>
+  <body>
 
-html, body {
-  /* si no, lo del flex no va */
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-}
+  <div class="seccion">
+    <form action="index2.php" method="post">
+      <label for="username">Nombre:</label><input type="text" name="username" autocomplete="off"></input>
+      <label for="cont">Contraseña:</label><input type="password" name="cont" autocomplete="off"></input>
+      <button type="submit">Crear</button>
+    </form>
+  </div>
 
-.flex-container {
-  /* ocupa toda la pantalla */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-}
-
-.flex-container>form {
-  border: 1px solid blue;
-  /* en unidades de fuente del elemento raíz */
-  padding: 0rem 1rem;
-}
-
-
-</style>
-</head>
-<body>
-
-<div class="flex-container">
-  <form action="index2.php" method="post">
-  	<p>LOGOTIPO</p>
-    <br><label for="username">Nombre:</label>
-    <br><input type="text" name="username"></input>
-    <br><label for="cont">Contraseña:</label>
-    <br><input type="password" name="cont"></input>
-    <p><button type="submit">Login</button></p>
-  </form>
-</div>
-
-</body>
+  </body>
 </html>
