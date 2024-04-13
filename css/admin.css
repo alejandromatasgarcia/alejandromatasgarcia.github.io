@@ -1,3 +1,15 @@
 .seccion {
-    border: 1px solid darkblue;
+    border: 0.5em solid darkblue;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+}
+.titulo {	
+	background-color: darkblue;
+    color: white;
+    width: max-content;
+    margin-left: 5vw;
+    margin-right: auto;
+    padding: 0.5em;
 }
